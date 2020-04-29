@@ -1,10 +1,8 @@
 ---
 title: "R Notebook"
 output:
-  html_document:
-    df_print: paged
-  html_notebook: default
   pdf_document: default
+  html_notebook: default
 ---
 
 This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
@@ -66,7 +64,7 @@ train <- vroom(str_c('/Coursework/Timeseries/Timeseries_project/CSV files/sales_
 prices <- vroom(str_c('/Coursework/Timeseries/Timeseries_project/CSV files/sell_prices.csv'), delim = ",", col_types = cols())
 calendar <- read_csv(str_c('/Coursework/Timeseries/Timeseries_project/CSV files/calendar.csv'), col_types = cols())
 
-sample_submit <- vroom(str_c('/Coursework/Timeseries/Timeseries_project/CSV files/sample_submission.csv'), delim = ",", col_types = cols())
+sample_submit <- vroom(str_c('sample_submission.csv'), delim = ",", col_types = cols())
 ```
 
 ```{r}
